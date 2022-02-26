@@ -5,64 +5,72 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portafolios Alexis Firpo</title>
-  <link rel="stylesheet" href="css/reset.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/head.css">
+  <link rel="stylesheet" href="css/presentacion.css">
+  <link rel="stylesheet" href="css/sobremi.css">
+  <link rel="stylesheet" href="css/skills.css">
 </head>
 <body>
-  <header>
-    <section>
-      <p>Alexis Firpo</p>
-    </section>
-    <nav>
-      <ul>
-        <li><a>Sobre Mi</a></li>
-        <li><a>Skills</a></li>
-        <li><a>Hobbies</a></li>
-        <li><a>Formacion</a></li>
-        <li><a>Proyectos</a></li>
-        <li><a>firpoEmanuel@gmail.com</a></li>
+  <header class="head">
+    <div class="head__nombre container">
+    <img  class="head__logo" src="/img/logosparkle.png" alt="Logo estrellado">
+      <p class="head__titulo">Alexis Firpo</p>
+    </div>
+    <nav class="head__navegacion container">
+      <ul class="head__navLista">
+        <li class="head__lista"><a class="head__enlace" href="#">Sobre Mi</a></li>
+        <li class="head__lista"><a class="head__enlace" href="#">Skills</a></li>
+        <li class="head__lista"><a class="head__enlace" href="#">Hobbies</a></li>
+        <li class="head__lista"><a class="head__enlace" href="#">Formacion</a></li>
+        <li class="head__lista"><a class="head__enlace" href="#">Proyectos</a></li>
+        <li class="head__lista"><a class="head__enlace email" href="#">firpoEmanuel@gmail.com</a></li>
       </ul>
     </nav>
   </header>
   <main>
-    <section>
-    <div>
-      <h1>Hola, mi nombre es Alexis Firpo y desarrollo paginas web</h1>
-      <p>Estoy formado en la Universidad Nacional de Rosario UNR y actualmente participo del proyecto Oracle One en Alura Latam</p>
-      <ul>
-        <li><a>Github</a></li>
-        <li><a>Linkedin</a></li>
-        <li><a>Curriculum</a></li>
+    <section class="presentacion">
+    <div  class="presentacion__container container">
+      <h1 class="presentacion__titulo">Hola, mi nombre es Alexis Firpo y desarrollo paginas web</h1>
+      <p class="presentacion__parrafo">Estoy formado en la Universidad Nacional de Rosario UNR y actualmente participo del proyecto Oracle One en Alura Latam</p>
+      <ul class="presentacion__navegacion">
+        <li class="presentacion__lista"><a class="presentacion__enlace" href="#">Github <img src="/img/arrow_back_black_24dp 1.png" alt="flecha"> </a></li>
+        <li class="presentacion__lista"><a class="presentacion__enlace" href="#">Linkedin <img src="/img/arrow_back_black_24dp 1.png" alt="flecha"></a></li>
+        <li class="presentacion__lista"><a class="presentacion__enlace" href="#">Curriculum <img src="/img/arrow_back_black_24dp 1.png" alt="flecha"></a></li>
       </ul>
     </div>
+      <img class="presentacion__imagen" src="/img/unsplash_anAAZ0nrqBY.png" alt="foto de perfil">
     </section>
-    <section>
-      <div>
-       <h2>Sobre Mi</h2>
-       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam facere optio voluptatum vitae ab non possimus distinctio, reprehenderit sunt repellat iusto facilis repudiandae harum odit neque quam in hic. Enim?</p>
-       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad nihil aut delectus quisquam magni dicta totam esse voluptatem sunt odit fuga, repudiandae recusandae! Maiores optio unde quisquam saepe suscipit. Temporibus?</p>
+    <section class="sobreMi">
+      <div class="sobreMi__container container">
+       <h2 class="sobreMi__titulo">Sobre Mi</h2>
+       <p class="sobreMi__parrafo">Hola, me llamo Alexis firpo, soy de Argentina tengo 24 años y estoy formado en humanidades (en el Colegio Rosario) y Derecho(en la universidad nacional de rosario). Estuve a cargo de la administracion de un estudio juridico durante una pasantia bajo la tutela del doctor Angel Baltussi.</p>
+       <p class="sobreMi__parrafo">Actualmente participo del proyecto Oracle One en Alura con objetivo de ampliar mis conocimientos como web developer</p>
+       <img  class="sobreMi__firma" src="/img/firma.png" alt="firma">
       </div>
     </section>
-    <section>
-      <h2>Skills</h2>
-      <div>
-      <ul>
-        <li>Html 5</li>
-        <li>Javascript</li>
-        <li>Css</li>
+    <section class="skillsHobbies">
+      <div class="skills__container container">
+      <h2 class="skills__titulo">Skills</h2>
+      <ul class="skills__navegacion">
+        <li class="skills__lista"><img src="img/iconohtml.png" alt="icono html"> Html 5</li>
+        <li class="skills__lista"><img src="img/iconojavascript.png" alt="icono html"> Javascript</li>
+        <li class="skills__lista"><img src="/img/css-file 1.png" alt="icono html"> Css</li>
+        <li class="skills__lista"><img src="img/teamwork.png" alt="icono html"> Trabajo en equipo</li>
+        <li class="skills__lista"><img src="img/libro.png" alt="icono html"> Ingles</li>
       </ul>
       </div>
-    </section>
-    <section>
-      <h2>Hobbies</h2>
-      <div>
-        <ul>
-          <li>Skate</li>
-          <li>Tocar el Bajo</li>
-          <li>Escuchar Musica</li>
-          <li>Ver Series</li>
-          <li>Cocinar</li>
-          <li>Leer</li>
+      <div class="hobbies__container container">
+      <h2 class="hobbies__titulo">Hobbies</h2>
+        <ul class="hobbies__navegacion">
+          <li class="hobbies__lista"> <img src="img/skate.png" alt="icono html">Skate</li>
+          <li class="hobbies__lista"> <img src="/img/guitar.png" alt="icono html">Tocar el Bajo</li>
+          <li class="hobbies__lista"> <img src="/img/auriculares.png" alt="icono html">Escuchar Musica</li>
+          <li class="hobbies__lista"> <img src="img/series.png" alt="icono html">Ver Series</li>
+          <li class="hobbies__lista"> <img src="img/cocina.png" alt="icono html">Cocinar</li>
+          <li class="hobbies__lista"> <img src="img/libro.png" alt="icono html">Leer</li>
         </ul>
       </div>
     </section>

@@ -1,9 +1,15 @@
 .head {
   background-color: #f5f5f5;
+  padding-top: 1rem;
+}
+
+.head__container{
+  margin-left: auto;
+  margin-right: auto;
+  width: 72%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  padding-top: 1rem;
+  justify-content: space-between;
 }
 
 
@@ -40,11 +46,49 @@
   color: #404040;
   transition: 400ms;
 }
-.email{
+.head__enlace-email{
+  text-decoration: none;
+  font-family: 'Raleway';
+  font-weight: medium;
+  font-size: 1rem;
+  color: #464646;
   font-weight: bold;
 }
 .container {
-  width: 731px;
+  width: 75%;
   margin-left: auto;
   margin-right: auto;
+}
+
+
+@media screen and (max-width: 768px) {
+  .head__enlace{
+    display: none;
+  }
+  .email{
+    display: inline-block;
+  }
+  .container{
+    width: 95%;
+  }
+
+  .head__container{
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 360px){
+  .head__enlace-email{
+    font-weight: lighter;
+    font-size: 0.9rem;
+  }
+  .head__titulo{
+    font-size: 0.975rem;
+  }
+  .container{
+    width: 100%;
+  }
+  .head__container{
+    width: 100%;
+  }
 }

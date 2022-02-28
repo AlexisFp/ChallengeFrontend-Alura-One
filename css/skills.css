@@ -22,7 +22,7 @@
 	position: relative;
   display: flex;
   width: 23%;
-  flex-wrap: wrap;
+  height: 170px;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
@@ -30,4 +30,20 @@
 
 .skills__navegacion, .hobbies__navegacion{
   display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px){
+  .skills__lista, .hobbies__lista{
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 360px){
+  .skills__titulo, .hobbies__titulo{
+    font-size: 1.25rem;
+  }
+  .skills__lista, .hobbies__lista{
+    width: 45%;
+  }
 }

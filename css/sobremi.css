@@ -3,7 +3,6 @@
   padding: 3rem;
 }
 .sobreMi__container{
-  width: 73%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -18,7 +17,7 @@
 
 .sobreMi__parrafo{
   font-family: 'raleway';
-  font-size: 1rem;
+  font-size: 1.10rem;
   color: #464646;
 }
 
@@ -26,3 +25,15 @@
   align-self: flex-start;
 }
 
+
+@media screen and (max-width: 360px){
+  .sobreMi{
+    padding: 1rem;
+  }
+  .sobreMi__titulo{
+    font-size: 1.25rem;
+  }
+  .sobreMi__parrafo{
+    font-size: 0.975rem;
+  }
+}

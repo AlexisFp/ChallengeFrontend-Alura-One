@@ -1,14 +1,15 @@
 .presentacion{
   background-color: #f5f5f5;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
   padding: 3rem;
 }
 
 .presentacion__container{
-  margin-left: 3rem;
-  margin-right: 3rem;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  margin-bottom: 1rem;
 }
 .presentacion__titulo{
   font-family: 'raleway';
@@ -25,6 +26,7 @@
 
 .presentacion__navegacion{
   display: flex;
+  flex-shrink: 1;
 }
 
 .presentacion__lista{
@@ -45,5 +47,54 @@
 }
 
 .presentacion__imagen{
-  margin-right: 3rem;
+  width: 250px;
+  height: 250px;
+}
+
+@media screen and (max-width: 768px){
+  .presentacion{
+    padding: 0,675rem;
+
+  }
+  .presentacion__imagen{
+    width: 150px;
+    height: 150px;
+  }
+
+  .presentacion__titulo{
+    font-size: 2rem;
+  }
+  .presentacion__parrafo{
+    font-size: 1.25rem;
+  }
+  .presentacion__enlace{
+    font-size: 1.10rem;
+  }
+}
+
+
+@media screen and (max-width: 360px){
+  .presentacion{
+    padding: 1rem;
+  }
+  .presentacion__container{
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .presentacion__titulo{
+    font-size: 1.25rem;
+  }
+  .presentacion__parrafo{
+    font-size: 0.975rem;
+  }
+  .presentacion__enlace{
+    font-size: 0.9rem;
+  }
+  .presentacion__imagen{
+    width: 100px;
+    height: 100px;
+  }
+  .presentacion__container-imagen{
+    order: -1;
+  }
 }

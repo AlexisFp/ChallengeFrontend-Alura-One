@@ -12,6 +12,10 @@
   <link rel="stylesheet" href="css/presentacion.css">
   <link rel="stylesheet" href="css/sobremi.css">
   <link rel="stylesheet" href="css/skills.css">
+  <link rel="stylesheet" href="css/formacion.css">
+  <link rel="stylesheet" href="css/experiencia.css">
+  <link rel="stylesheet" href="css/contacto.css">
+  <link rel="stylesheet" href="css/rodapie.css">
 </head>
 <body>
   <header class="head">
@@ -27,7 +31,7 @@
           <li class="head__lista"><a class="head__enlace" href="#">Hobbies</a></li>
           <li class="head__lista"><a class="head__enlace" href="#">Formacion</a></li>
           <li class="head__lista"><a class="head__enlace" href="#">Proyectos</a></li>
-          <li class="head__lista"><a class="head__enlace-email" href="#">firpoEmanuel@gmail.com</a></li>
+          <li class="head__lista"><a class="head__enlace-email" href="#">firpoemanuel@gmail.com</a></li>
        </ul>
     </nav>
   </div>
@@ -80,7 +84,77 @@
         </ul>
       </div>
     </section>
+    <section class="formacionAcademica">
+      <div class="formacionAcademica__container container">
+        <h2 class="formacionAcademica__titulo">Formación Académica</h2>
+        <div class="formacionAcademica__institucion">
+          <div class="formacionAcademica__contenido">
+            <img alt="Logo Colegio Rosario" class="formacionAcademica__imagen" src="/img/secundarialogo.jpg"/>
+            <h3 class="formacionAcademica__contenido-titulo">Nivel Secundario</h3>
+            <p class="formacionAcademica__descripcion">2011-2015 - "Colegio Rosario"</p>
+        </div>
+          <div class="formacionAcademica__contenido">
+            <img alt="Logo Universidad nacional de Rosario" class="formacionAcademica__imagen" src="/img/logounr.jpg"/>
+            <h3 class="formacionAcademica__contenido-titulo">Grado-Abogacia</h3>
+            <p class="formacionAcademica__descripcion">En curso - "UNR"</p>
+        </div>
+          <div class="formacionAcademica__contenido">
+            <img alt="Logo de Alura" class="formacionAcademica__imagen" src="/img/logoalura.png"/>
+            <h3 class="formacionAcademica__contenido-titulo">Formacion en Frontend</h3>
+            <p class="formacionAcademica__descripcion">2022 - "Alura"</p>
+        </div>
+      </div>
+    </section>
+    <section class="experienciaProfesional">
+      <div class="experienciaProfesional__container container">
+        <h2 class="experienciaProfesional__titulo">Experiencia profesional</h2>
+        <div class="experienciaProfesional__apartado">
+          <img alt="Imagen de encriptador de texto" class="experienciaProfesional__imagen" src="/img/encriptadordemo.png">
+          <div class="experienciaProfesional__contenido">
+            <h3 class="experienciaProfesional__contenido-titulo">Encriptador de texto</h3>
+            <p class="experenciaProfesiona__descripcion">Challenge Alura Codificador</p>
+            <div class="botones">
+             <a href="#" class="boton repositorio">Repositório</a>
+             <a href="#" class="boton demo">Ver demo</a>
+            </div>
+          </div>
+        </div>
+        <div class="experienciaProfesional__apartado">
+          <div class="experienciaProfesional__contenido">
+            <h3 class="experienciaProfesional__contenido-titulo">Juego creado con HTML y JavaScript</h3>
+            <p class="experenciaProfesiona__descripcion">Challenge Oracle</p>
+            <div class="botones">
+              <a href="#" class="boton repositorio">Repositório</a>
+              <a href="#" class="boton demo">Ver demo</a>
+            </div>
+          </div>
+          <img alt="Imagen de juego del ahorcado" class="experienciaProfesional__imagen" src="/img/ahorcadodemo.png">
+        </div>
+      </div>
+    </section>
+    <section class="contacto">
+      <div class="contacto__container container">
+        <img class="contacto__imagen" alt="Imagen de contacto" src="/img/telefono.png">
+        <form class="contacto__contenido">
+          <h2 class="contacto__contenido-titulo">Contacto</h2>
+          <p class="contacto__descripcion">¿Quieres contactarme? <br> Complete el siguien formulario y me pondre en contacto con usted lo antes posible</p>
+          <label for="nombreApellido"></label>
+          <input type="text" id="nombreApellido" class="input__contacto" required placeholder="nombre">
+          <label for="correo Electronico"></label>
+          <input type="email" id="correoElectronico" class="input__contacto" required placeholder="email@dominio.com">
+          <label for="asunto"></label>
+          <input type="text" id="asunto" class="input__contacto" required placeholder="Asunto">
+          <label for="mensaje"></label>
+          <textarea cols="70" rows="10" id="mensaje" class="input__contacto" required placeholder="mensaje"></textarea>
+          <input type="submit" value="Enviar mensaje" class="enviar">  
+        </form>
+      </div>
+    </section>
   </main>
-  
+  <footer class="footer">
+    <div class="footer__container container">
+      <p class="footer__contenido">Desarrollado por Alexis Firpo<br>2022</p>
+    </div>
+  </footer>
 </body>
 </html>

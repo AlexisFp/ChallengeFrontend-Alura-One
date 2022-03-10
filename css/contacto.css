@@ -1,0 +1,53 @@
+.contacto{
+  background-color: #eaf2fd;
+  padding: 3rem;
+}
+
+.contacto__container{
+  display: flex;
+}
+.contacto__contenido{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 50%;
+  margin: 1rem;
+}
+
+.contacto__contenido-titulo{
+  font-family: 'raleway';
+  color: #464646;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.contacto__descripcion{
+  font-family: 'raleway';
+  color: #464646;
+  font-size: 1rem;
+}
+
+.input__contacto{
+  background-color: #ffffff;
+  padding: 0.675rem ;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  border: none;
+  outline: none;
+}
+
+.input__contacto:hover::placeholder{
+  color: #2A7AE4;
+}
+
+.input__contacto:hover{
+  border-bottom: #2A7AE4 2px solid;
+}
+.enviar{
+  width: 23%;
+  padding: .75rem 1rem;
+  border: none;
+  background-color: #2A7AE4;
+  color: #ffffff;
+  margin-top: 1rem;
+}

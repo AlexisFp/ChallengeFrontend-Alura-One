@@ -1,0 +1,42 @@
+.formacionAcademica{
+  background-color: #eaf2fd;
+  padding: 3rem;
+  
+}
+
+.formacionAcademica__titulo{
+  font-family: 'raleway';
+  color: #464646;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.formacionAcademica__institucion{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+
+.formacionAcademica__contenido{
+  display: flex;
+  flex-direction: column;
+  margin: 1%;
+}
+.formacionAcademica__imagen{
+  margin-bottom: 1rem;
+}
+
+.formacionAcademica__contenido-titulo{
+  font-family: 'raleway';
+  color: #464646;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.formacionAcademica__descripcion{
+  font-family: 'raleway';
+  color: #464646;
+  font-size: 1rem;
+}

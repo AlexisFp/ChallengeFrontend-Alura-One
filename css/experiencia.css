@@ -53,6 +53,11 @@
   margin-left: 0.5rem;
 }
 
+
+.botones{
+  display: flex;
+
+}
 .boton{
   text-decoration: none;
   width: 100%;
@@ -62,4 +67,24 @@
 
 .repositorio{
   color: #2A7AE4;
+}
+
+@media screen and (max-width: 768px){
+  .experienciaProfesional__imagen{
+    height: 100%;
+    width: 100%;
+  }
+  .experienciaProfesional__apartado{
+    flex-wrap: wrap;
+  }
+  .experienciaProfesional__contenido{
+    order: +1;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 360px){
+  .boton{
+    font-size: .75rem;
+  }
 }

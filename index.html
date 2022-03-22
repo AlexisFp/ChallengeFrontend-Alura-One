@@ -138,15 +138,27 @@
         <form class="contacto__contenido">
           <h2 class="contacto__contenido-titulo">Contacto</h2>
           <p class="contacto__descripcion">¿Quieres contactarme? <br> Complete el siguien formulario y me pondre en contacto con usted lo antes posible</p>
-          <label for="nombreApellido"></label>
-          <input type="text" id="nombreApellido" class="input__contacto" required placeholder="nombre">
-          <label for="correo Electronico"></label>
-          <input type="email" id="correoElectronico" class="input__contacto" required placeholder="email@dominio.com">
+          <div class="form-container" >
+            <label class="input-label" for="nombreApellido"></label>
+          <input type="text" id="nombreApellido" class="input__contacto" pattern="[\s\S]{3,50}" data-tipo="nombre" required placeholder="nombre">
+          <span class="input__contacto-error">Este campo no es valido</span>
+          </div>
+          <div class="form-container" >
+          <label  for="correo Electronico"></label>
+          <input type="email" id="correoElectronico" class="input__contacto" required data-tipo="email" placeholder="email@dominio.com">
+          <span class="input__contacto-error">Este campo no es valido</span>
+          </div>
+          <div class="form-container" >
           <label for="asunto"></label>
-          <input type="text" id="asunto" class="input__contacto" required placeholder="Asunto">
+          <input type="text" id="asunto" pattern="[\s\S]{10,50}" data-tipo="asunto" class="input__contacto" required placeholder="Asunto">
+          <span class="input__contacto-error">Este campo no es valido</span>
+          </div>
+          <div class="form-container" >
           <label for="mensaje"></label>
-          <textarea cols="70" rows="10" id="mensaje" class="input__contacto" required placeholder="mensaje"></textarea>
-          <input type="submit" value="Enviar mensaje" class="enviar">  
+          <textarea cols="70" rows="10" id="mensaje" class="input__contacto" required placeholder="mensaje" data-tipo="mensaje" ></textarea>
+          <span class="input__contacto-error">Este campo no es valido</span>
+          </div>
+          <input type="submit" value="Enviar mensaje" class="enviar" disabled>  
         </form>
       </div>
     </section>
@@ -156,5 +168,6 @@
       <p class="rodapie__contenido">Desarrollado por Alexis Firpo<br>2022</p>
     </div>
   </footer>
+  <script src="/js/apps.js" type="module"></script>
 </body>
 </html>
